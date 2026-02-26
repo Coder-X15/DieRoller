@@ -8,19 +8,19 @@ pipeline {
         }
         stage('Build Images') {
             steps {
-                script {
-                    sh 'docker compose -f compose.yaml build'
-                }
+                echo 'build stage placeholder'
             }
         }
         stage('Run Tests') {
             steps {
-                echo 'No tests defined (add backend/frontend tests as needed)'
+                echo 'test stage placeholder'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deployment step can go here (push images, etc.)'
+                script {
+                    sh 'docker-compose up -d'
+                }
             }
         }
     }

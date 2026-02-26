@@ -19,7 +19,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    sh 'docker compose up'
+                    sh 'apt-get update && apt-get install -y docker-compose'
+                    sh 'docker-compose up'
                 }
             }
         }

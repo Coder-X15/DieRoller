@@ -29,6 +29,10 @@ function App() {
     <div className="app-container">
       <h1>Animated Die</h1>
       <Die value={face} rolling={rolling} />
+      {/* show the numeric result from the API */}
+      {face !== null && (
+        <p className="roll-result">You rolled: {face}</p>
+      )}
       <button onClick={roll} disabled={rolling} className="roll-button">
         {rolling ? 'Rolling...' : 'Roll Again'}
       </button>

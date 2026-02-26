@@ -1,0 +1,2 @@
+# Silly Die
+I made it while trying to tinker with Jenkins. To try it, create a new pipeline that fetches this GitHub repo, set it to use the Jenkinsfile on the repo (set the branch to `main`) and then save it and run the job. ONce the site is up, you mahy access the inteface at http://localhost:3000.
